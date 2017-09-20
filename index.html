@@ -16,24 +16,27 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-2 navigation">
-                <nav class="navbar-brand  border" style="background-color:black">
-                    <a href="#">
-                        <img src="./assets/img/logo.png" alt="logo" class="img-fluid">
-                    </a>
-                </nav>
-                <div class="border">
-                    <ul class="navbar-nav nav ">
-                        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                        <li><a href="#"><i class="fa fa-database" aria-hidden="true"></i> Stuff</a></li>
-                        <li><a href="#"><i class="fa fa-th-large" aria-hidden="true"></i> Pictures</a></li>
-                        <li><a href="#"><i class="fa fa-gg-circle" aria-hidden="true"></i> About</a></li>
-                    </ul>
+            <div class="col-md-2 navigation ">
+                <div class="row justify-content-center">
+                    <nav class="navbar-brand border " style="background-color:black">
+                        <a href="#">
+                            <img src="./assets/img/logo.png" alt="logo" class="img-fluid">
+                        </a>
+                    </nav>
                 </div>
-
+                <div class="row justify-content-center menu">
+                    <div class="border nav-section">
+                        <ul class="navbar-nav nav ">
+                            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                            <li><a href="#"><i class="fa fa-database" aria-hidden="true"></i> Stuff</a></li>
+                            <li><a href="#"><i class="fa fa-th-large" aria-hidden="true"></i> Pictures</a></li>
+                            <li><a href="#"><i class="fa fa-gg-circle" aria-hidden="true"></i> About</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="col-md-10">
-                <div class="container">
+                <div class="content">
                     <div class="row">
                         <div class="jumbotron border">
                             <h1 class="display-3">Lorem, ipsum.</h1>
@@ -44,34 +47,32 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row justify-content-end">
-                        <div class="col-md-9.offset-md-3">
-                            <form action="#" class="form">
-                                <label for="email">Sign up for our newsletter</label>
-                                <input type="email" name="email" placeholder="Email Address" class="border">
-                                <input type="button" value="Subscribe" class="border">
-                            </form>
+                    <div class="form-group row justify-content-end form">
+                        <label for="example-text-input" class="col-4 col-form-label" name="label">Sign up for our newsletter: </label>
+                        <div class="col-4">
+                            <input class="form-control border" type="text" id="example-text-input" placeholder="Email Address">
                         </div>
+                        <button type="button" class="btn btn-secondary col-2 border">Subscribe</button>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6  ">
-                            <div class="border article">
+                    <div class="row justify-content-between articles">
+                        <div class="col-md-4 col-sm-6  item_wrapper">
+                            <div class="border item">
                                 <h3>Lorem, ipsum dolor.</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque odit saepe alias error doloribus,
                                     delectus sed placeat repudiandae dolore, suscipit quos vel beatae! Molestiae atque est
                                     sequi asperiores recusandae rem.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 ">
-                            <div class="border article">
+                        <div class="col-md-4 col-sm-6 item_wrapper">
+                            <div class="border item">
                                 <h3>Lorem, ipsum dolor.</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque odit saepe alias error doloribus,
                                     delectus sed placeat repudiandae dolore, suscipit quos vel beatae! Molestiae atque est
                                     sequi asperiores recusandae rem.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 ">
-                            <div class="border article">
+                        <div class="col-md-4 col-sm-6 item_wrapper">
+                            <div class="border item">
                                 <h3>Lorem, ipsum dolor.</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque odit saepe alias error doloribus,
                                     delectus sed placeat repudiandae dolore, suscipit quos vel beatae! Molestiae atque est
@@ -83,17 +84,17 @@
             </div>
         </div>
         <hr>
-        <div class="row justify-content-between">
-            <div class="col-md-4">
-                <ul class="list-unstyled list-inline">
+        <div class="row justify-content-between footer">
+            <div class="col-md-6">
+                <ul class="list-unstyled list-inline footer-menu">
                     <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
                     <li class="list-inline-item"><a href="#">Terms of use</a></li>
                     <li class="list-inline-item"><a href="#">Contact</a></li>
                 </ul>
                 <p>&copy; 2015 My Copmany, all rights reserved</p>
             </div>
-            <div class="col-md-2.offset-md-5">
-                <ul class="list-unstyled list-inline">
+            <div class="col-md-2 offset-md-4">
+                <ul class="list-unstyled list-inline footer-social">
                     <li class="list-inline-item"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
                     <li class="list-inline-item"><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
                     <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
